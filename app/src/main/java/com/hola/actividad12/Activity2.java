@@ -21,11 +21,11 @@ public class Activity2 extends AppCompatActivity {
         setContentView(R.layout.activity_2);
 
         Datos = findViewById(R.id.datos);
-        // Recibir datos del intent
         recibirDatos();
     }
 
     private void recibirDatos() {
+        //Recibe datos del intent
         Intent intent = getIntent();
 
         if (intent != null) {
@@ -33,10 +33,9 @@ public class Activity2 extends AppCompatActivity {
 
             Datos.setText(Texto);
 
-            // Mostrar también un Toast con los datos recibidos
-            Toast.makeText(this, "Datos recibidos correctamente", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Datos recibidos", Toast.LENGTH_LONG).show();
         } else {
-            Toast.makeText(this, "No se recibieron datos", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "No se recibieron los datos", Toast.LENGTH_LONG).show();
         }
     }
 

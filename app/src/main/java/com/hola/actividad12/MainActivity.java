@@ -40,17 +40,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void enviarDatos() {
-        String texto = txt1.getText().toString().trim();
+        String texto = txt1.getText().toString();
 
-        // Validar que los campos no estén vacíos
         if (texto.isEmpty()) {
-            // Mostrar mensaje de error si algún campo está vacío
+            // Mostra un mensaje de error si esta vacio
             txt1.setError("Campo obligatorio");
             return;
         } else {
 
-            // Crear intent y enviar datos
-            Intent intent = new Intent(MainActivity.this, Activity2.class);
+            Intent intent = new Intent(this, Activity2.class);
             intent.putExtra("Texto1", texto);
 
             startActivity(intent);
