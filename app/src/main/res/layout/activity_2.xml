@@ -16,7 +16,7 @@
         android:layout_marginTop="454dp"
         android:layout_marginEnd="29dp"
         android:layout_marginBottom="448dp"
-        android:text="Aquí se mostrarán los datos recibidos..."
+        android:text="Aquí se muestan los datos recibidos"
         android:textAlignment="center"
         android:textSize="20sp"
         android:visibility="visible"
