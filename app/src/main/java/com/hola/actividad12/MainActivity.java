@@ -50,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
 
             Intent intent = new Intent(this, Activity2.class);
             intent.putExtra("Texto1", texto);
-
             startActivity(intent);
+            //hola abbott
         }
     }
 }
