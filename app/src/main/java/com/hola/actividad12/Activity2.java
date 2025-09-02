@@ -1,5 +1,5 @@
 package com.hola.actividad12;
-
+// Benjamin Rodriguez,Bruno Guajardo
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;

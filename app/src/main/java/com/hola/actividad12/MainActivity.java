@@ -1,5 +1,5 @@
 package com.hola.actividad12;
-
+// Benjamin Rodriguez,Bruno Guajardo
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 enviarDatos();
             }
-        });
+        });// Tuve que colocar esto porque no fucionaba la funcion OnClick en el xml
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         String texto = txt1.getText().toString();
 
         if (texto.isEmpty()) {
-            // Mostra un mensaje de error si esta vacio
+            // Muestra un mensaje de error si esta vacio
             txt1.setError("Campo obligatorio");
             return;
         } else {
